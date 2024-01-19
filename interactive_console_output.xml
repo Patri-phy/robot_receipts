@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240119 13:00:10.391" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\patrizio.spada\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open the webpage">
+<msg timestamp="20240119 13:00:11.827" level="FAIL">No keyword with name 'Open the webpage' found.</msg>
+<status status="FAIL" starttime="20240119 13:00:11.827" endtime="20240119 13:00:11.827"/>
+</kw>
+<kw name="Read table from CSV">
+<var>${orders}</var>
+<arg>orders.csv</arg>
+<arg>header=True</arg>
+<status status="NOT RUN" starttime="20240119 13:00:11.834" endtime="20240119 13:00:11.834"/>
+</kw>
+<for flavor="IN">
+<var>${row}</var>
+<value>@{orders}</value>
+<iter>
+<var name="${row}"/>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>10x</arg>
+<arg>0.5s</arg>
+<arg>Order the robot</arg>
+<arg>${row}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20240119 13:00:11.834" endtime="20240119 13:00:11.834"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${row}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240119 13:00:11.835" endtime="20240119 13:00:11.835"/>
+</kw>
+<status status="NOT RUN" starttime="20240119 13:00:11.834" endtime="20240119 13:00:11.835"/>
+</iter>
+<status status="NOT RUN" starttime="20240119 13:00:11.834" endtime="20240119 13:00:11.835"/>
+</for>
+<kw name="Create ZIP package from PDF files">
+<status status="NOT RUN" starttime="20240119 13:00:11.837" endtime="20240119 13:00:11.837"/>
+</kw>
+<status status="PASS" starttime="20240119 13:00:10.454" endtime="20240119 13:00:11.929"/>
+</kw>
+<status status="PASS" starttime="20240119 13:00:10.454" endtime="20240119 13:00:11.929"/>
+</test>
+<status status="PASS" starttime="20240119 13:00:10.391" endtime="20240119 13:00:11.930"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
